@@ -1,14 +1,20 @@
 <resources>
     <string name="app_name">HW2App</string>
-
+    <string name="loading">Loading…</string>
+    <string name="trafficBtn">Traffic Cams</string>
+    <string name="noInternet">No Internet Connection</string>
+    <string name="fetchError">Cannot Fetch Data</string>
+    <string name="badJSON">Error in JSON formatting</string>
+    <string name="unknownError">Unknown error</string>
+    <string name="badURL">Error: bad resource URL</string>
     <string name="textBox">Enter text: </string>
     <string name="sendBtn">Send</string>
     <string name="nwBtn">North West</string>
     <string name="pacBtn">Pacific</string>
     <string name="movieBtn">Movies</string>
     <string name="earthBtn">Earth</string>
-    <string name="placeholder">Holding the place</string>
-    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="placeholder">Place Holder</string>
+    <string name="title_activity_scrolling">Scrolling Activity</string>
     <string name="large_text">
         "Material is the metaphor.\n\n"
 

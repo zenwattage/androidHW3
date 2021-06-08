@@ -6,9 +6,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.Toast
- import com.example.hw2app.databinding.ActivityMainBinding
-
-
+import com.example.hw2app.databinding.ActivityMainBinding
 
  class MainActivity : AppCompatActivity() {
 
@@ -20,16 +18,17 @@ import android.widget.Toast
          binding = ActivityMainBinding.inflate(layoutInflater)
          setContentView(R.layout.activity_main)
 
+         val movieBtn = findViewById<Button>(R.id.movieBtn)
+         val sendBtn = findViewById<Button>(R.id.sendBtn)
+         val pacBtn = findViewById<Button>(R.id.pacBtn)
+         val earthBtn = findViewById<Button>(R.id.earthBtn)
+         val trafficBtn = findViewById<Button>(R.id.trafficBtn)
 
-//     fun toast(view: View) {
-//         Toast.makeText(this, "Hi there! This is @", Toast.LENGTH_SHORT).show()
-//     }
-
-         var movieBtn = findViewById<Button>(R.id.movieBtn)
-         var sendBtn = findViewById<Button>(R.id.sendBtn)
-         var pacBtn = findViewById<Button>(R.id.pacBtn)
-         var earthBtn = findViewById<Button>(R.id.earthBtn)
-         var nwBtn = findViewById<Button>(R.id.nwBtn)
+         trafficBtn.setOnClickListener {
+//             Toast.makeText(this, "Hi there! This is a ${this.getString(R.string.nwBtn)} Button!", Toast.LENGTH_LONG).show()
+             val intent = Intent(this, TrafficCameras::class.java)
+             startActivity(intent)
+         }
 
          movieBtn.setOnClickListener {
 //             Toast.makeText(this, "Hi there! This is the ${this.getString(R.string.movieBtn)} Button!", Toast.LENGTH_LONG).show()
@@ -49,11 +48,5 @@ import android.widget.Toast
          earthBtn.setOnClickListener {
              Toast.makeText(this, "Hi there! This is a ${this.getString(R.string.earthBtn)} Button!", Toast.LENGTH_LONG).show()
          }
-
-         nwBtn.setOnClickListener {
-             Toast.makeText(this, "Hi there! This is a ${this.getString(R.string.nwBtn)} Button!", Toast.LENGTH_LONG).show()
-         }
-
-
      }
  }
