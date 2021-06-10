@@ -1,4 +1,4 @@
- package com.example.hw2app
+  package com.example.hw2app
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -20,8 +20,7 @@ import com.example.hw2app.databinding.ActivityMainBinding
 
          val movieBtn = findViewById<Button>(R.id.movieBtn)
          val sendBtn = findViewById<Button>(R.id.sendBtn)
-         val pacBtn = findViewById<Button>(R.id.pacBtn)
-         val earthBtn = findViewById<Button>(R.id.earthBtn)
+         val mapBtn = findViewById<Button>(R.id.mapBtn)
          val trafficBtn = findViewById<Button>(R.id.trafficBtn)
 
          trafficBtn.setOnClickListener {
@@ -40,13 +39,9 @@ import com.example.hw2app.databinding.ActivityMainBinding
              Toast.makeText(this, "Hi there! This is a ${this.getString(R.string.sendBtn)} Button.!", Toast.LENGTH_LONG).show()
          }
 
-         pacBtn.setOnClickListener {
-             // make a toast on button click event
-             Toast.makeText(this, "Hi there! This is a ${this.getString(R.string.pacBtn)} Button!", Toast.LENGTH_LONG).show()
+         mapBtn.setOnClickListener {
+             Toast.makeText(this, "this is the ${this.getString(R.string.mapBtn)}", Toast.LENGTH_LONG).show()
          }
 
-         earthBtn.setOnClickListener {
-             Toast.makeText(this, "Hi there! This is a ${this.getString(R.string.earthBtn)} Button!", Toast.LENGTH_LONG).show()
-         }
      }
  }
