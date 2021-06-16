@@ -18,6 +18,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HW2App">
 
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="${MAPS_API_KEY}" />
+
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -37,6 +42,10 @@
             android:name=".TrafficCameras"
             android:label="Traffic Cameras"
             android:parentActivityName=".MainActivity" />
+        <activity android:name=".Map"
+            android:label="Google Map"
+            android:parentActivityName=".MainActivity"
+            />
     </application>
 
 </manifest>

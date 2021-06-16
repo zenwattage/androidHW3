@@ -10,7 +10,7 @@
     <string name="textBox">Enter text: </string>
     <string name="sendBtn">Send</string>
     <string name="nwBtn">North West</string>
-    <string name="pacBtn">Pacific</string>
+    <string name="mapBtn">Google Map</string>
     <string name="movieBtn">Movies</string>
     <string name="earthBtn">Earth</string>
     <string name="placeholder">Place Holder</string>
