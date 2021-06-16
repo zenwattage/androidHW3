@@ -7,8 +7,9 @@ import android.view.View
 import android.widget.Button
 import android.widget.Toast
 import com.example.hw2app.databinding.ActivityMainBinding
+import com.google.android.gms.maps.OnMapReadyCallback
 
- class MainActivity : AppCompatActivity() {
+  class MainActivity : AppCompatActivity(){
 
      private lateinit var binding: ActivityMainBinding
 
@@ -40,7 +41,9 @@ import com.example.hw2app.databinding.ActivityMainBinding
          }
 
          mapBtn.setOnClickListener {
-             Toast.makeText(this, "this is the ${this.getString(R.string.mapBtn)}", Toast.LENGTH_LONG).show()
+//             Toast.makeText(this, "this is the ${this.getString(R.string.mapBtn)}", Toast.LENGTH_LONG).show()
+             val intent = Intent(this, Map::class.java)
+             startActivity(intent)
          }
 
      }
