@@ -46,7 +46,7 @@
 
 
     <EditText
-        android:id="@+id/textBox"
+        android:id="@+id/usernameBox"
         android:layout_width="140dp"
         android:layout_height="wrap_content"
         android:layout_row="0"
@@ -54,16 +54,16 @@
         android:layout_marginStart="20dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="@string/textBox"
+        android:text="@string/usernameBox"
         android:importantForAutofill="no"
         tools:ignore="LabelFor" />
 
     <Button
-        android:id="@+id/sendBtn"
+        android:id="@+id/loginBtn"
         android:layout_width="140dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
-        android:text="@string/sendBtn"/>
+        android:text="@string/loginBtn"/>
 
 
 </GridLayout>

@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.Toast
 import com.example.hw2app.databinding.ActivityMainBinding
-import com.google.android.gms.maps.OnMapReadyCallback
 
   class MainActivity : AppCompatActivity(){
 
@@ -19,7 +18,7 @@ import com.google.android.gms.maps.OnMapReadyCallback
          setContentView(R.layout.activity_main)
 
          val movieBtn = findViewById<Button>(R.id.movieBtn)
-         val sendBtn = findViewById<Button>(R.id.sendBtn)
+         val loginBtn = findViewById<Button>(R.id.loginBtn)
 
          val mapBtn = findViewById<Button>(R.id.mapBtn)
          val trafficBtn = findViewById<Button>(R.id.trafficBtn)
@@ -27,7 +26,7 @@ import com.google.android.gms.maps.OnMapReadyCallback
 
          mapBtn.setOnClickListener {
              // make a toast on button click event
-             Toast.makeText(this, "Hi there! This is a ${this.getString(R.string.pacBtn)} Button!", Toast.LENGTH_LONG).show()
+             Toast.makeText(this, "Hi there! This is a ${this.getString(R.string.mapBtn)} Button!", Toast.LENGTH_LONG).show()
          }
 
          trafficBtn.setOnClickListener {
@@ -42,8 +41,8 @@ import com.google.android.gms.maps.OnMapReadyCallback
              startActivity(intent)
          }
 
-         sendBtn.setOnClickListener {
-             Toast.makeText(this, "Hi there! This is a ${this.getString(R.string.sendBtn)} Button.!", Toast.LENGTH_LONG).show()
+         loginBtn.setOnClickListener {
+             Toast.makeText(this, "Hi there! This is a ${this.getString(R.string.loginBtn)} Button.!", Toast.LENGTH_LONG).show()
          }
 
 

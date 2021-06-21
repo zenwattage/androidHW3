@@ -7,8 +7,10 @@
     <string name="badJSON">Error in JSON formatting</string>
     <string name="unknownError">Unknown error</string>
     <string name="badURL">Error: bad resource URL</string>
-    <string name="textBox">Enter text: </string>
-    <string name="sendBtn">Send</string>
+    <string name="usernameBox">Username: </string>
+    <string name="emailBox">Email: </string>
+    <string name="passwordBox">Password: </string>
+    <string name="loginBtn">Login</string>
     <string name="nwBtn">North West</string>
     <string name="mapBtn">Google Map</string>
     <string name="movieBtn">Movies</string>
