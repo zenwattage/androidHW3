@@ -1,10 +1,11 @@
-package com.example.hw2app
+package com.ad340.hw6App
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.ad340.hw6App.R
 
 class Movies : AppCompatActivity(), MovieAdapter.OnItemClickListener {
 

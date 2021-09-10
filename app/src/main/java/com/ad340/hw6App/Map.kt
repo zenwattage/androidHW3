@@ -1,4 +1,4 @@
-package com.example.hw2app
+package com.ad340.hw6App
 
 import android.Manifest
 import android.content.pm.PackageManager
@@ -8,6 +8,7 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import com.ad340.hw6App.R
 import com.google.android.gms.maps.CameraUpdateFactory
 
 import com.google.android.gms.maps.GoogleMap
@@ -15,7 +16,7 @@ import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
-import com.example.hw2app.databinding.ActivityMapBinding
+import com.ad340.hw6App.databinding.ActivityMapBinding
 
 class Map : AppCompatActivity(), OnMapReadyCallback {
     private lateinit var googleMap: GoogleMap

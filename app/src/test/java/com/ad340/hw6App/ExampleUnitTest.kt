@@ -1,4 +1,4 @@
-package com.example.hw2app
+package com.ad340.hw6App
 
 import org.junit.Test
 

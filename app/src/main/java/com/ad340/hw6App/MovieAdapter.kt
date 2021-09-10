@@ -1,10 +1,11 @@
-package com.example.hw2app
+package com.ad340.hw6App
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.ad340.hw6App.R
 
 class MovieAdapter (
     private val moviesList: Array<Array<String>>,

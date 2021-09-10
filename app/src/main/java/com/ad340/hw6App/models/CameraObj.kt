@@ -1,4 +1,4 @@
-package com.example.hw2app.models
+package com.ad340.hw6App.models
 
 data class CameraObj(
     val Id: String,
