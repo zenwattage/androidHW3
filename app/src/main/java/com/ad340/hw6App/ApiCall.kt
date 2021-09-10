@@ -1,6 +1,6 @@
-package com.example.hw2app
+package com.ad340.hw6App
 
-import com.example.hw2app.models.Camera
+import com.ad340.hw6App.models.Camera
 import retrofit2.Call
 import retrofit2.http.GET
 

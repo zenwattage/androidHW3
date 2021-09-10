@@ -6,67 +6,133 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
 
     
-    tools:context=".MainActivity">
+    tools:context="com.ad340.hw6App.MainActivity">
 
-<GridLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_marginStart="20dp"
-    android:layout_marginTop="150dp"
-    tools:context=".MainActivity">
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.ad340.hw6App.MainActivity"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
 
-    <Button
-        android:id="@+id/movieBtn"
-        android:layout_width="140dp"
-        android:layout_height="wrap_content"
-        android:layout_row="2"
-        android:layout_column="0"
-        android:layout_marginStart="20dp"
-        android:text="@string/movieBtn"
-        />
-    <Button
-        android:id="@+id/trafficBtn"
-        android:layout_width="140dp"
-        android:layout_height="wrap_content"
-        android:layout_row="1"
-        android:layout_column="0"
-        android:layout_marginStart="20dp"
-        android:text="@string/trafficBtn"
-        />
+        <com.google.android.material.textfield.TextInputLayout
 
-    <Button
-        android:id="@+id/mapBtn"
-        android:layout_width="140dp"
-        android:layout_height="wrap_content"
-        android:layout_row="1"
-        android:layout_column="1"
-        android:layout_marginStart="40dp"
-        android:text="@string/mapBtn" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="2"
+            android:layout_columnWeight="01"
+            app:errorEnabled="true">
 
+        </com.google.android.material.textfield.TextInputLayout>
 
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/text_input_username"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:autofillHints="enter something"
+            android:hint="@string/username"
+            android:inputType="text" />
 
-    <EditText
-        android:id="@+id/usernameBox"
-        android:layout_width="140dp"
-        android:layout_height="wrap_content"
-        android:layout_row="0"
-        android:layout_column="0"
-        android:layout_marginStart="20dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/usernameBox"
-        android:importantForAutofill="no"
-        tools:ignore="LabelFor" />
-
-    <Button
-        android:id="@+id/loginBtn"
-        android:layout_width="140dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:text="@string/loginBtn"/>
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/text_input_email"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:autofillHints="enter your email address"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp" />
 
 
-</GridLayout>
+        <!--    <EditText-->
+        <!--        android:id="@+id/usernameBox"-->
+        <!--        android:layout_width="140dp"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_row="0"-->
+        <!--        android:layout_column="0"-->
+        <!--        android:layout_marginStart="20dp"-->
+        <!--        android:ems="10"-->
+        <!--        android:inputType="textPersonName"-->
+        <!--        android:text="@string/usernameBox"-->
+        <!--        android:importantForAutofill="no"-->
+        <!--        tools:ignore="LabelFor" />-->
+        <!--    <EditText-->
+        <!--        android:id="@+id/emailBox"-->
+        <!--        android:layout_width="140dp"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_row="0"-->
+        <!--        android:layout_column="0"-->
+        <!--        android:layout_marginStart="20dp"-->
+        <!--        android:ems="10"-->
+        <!--        android:inputType="textEmailAddress"-->
+        <!--        android:text="@string/emailBox"-->
+        <!--        android:importantForAutofill="no"-->
+        <!--        tools:ignore="LabelFor" />-->
+        <!--    <EditText-->
+        <!--        android:id="@+id/passwordBox"-->
+        <!--        android:layout_width="140dp"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_row="0"-->
+        <!--        android:layout_column="0"-->
+        <!--        android:layout_marginStart="20dp"-->
+        <!--        android:ems="10"-->
+        <!--        android:inputType="textPassword"-->
+        <!--        android:text="@string/passwordBox"-->
+        <!--        android:importantForAutofill="no"-->
+        <!--        tools:ignore="LabelFor" />-->
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/text_input_password"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:autofillHints="enter your password"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:minHeight="48dp" />
+
+        <Button
+            android:id="@+id/movieBtn"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:layout_marginStart="20dp"
+            android:text="@string/movieBtn" />
+
+        <Button
+            android:id="@+id/trafficBtn"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_row="4"
+            android:layout_column="1"
+            android:layout_marginStart="20dp"
+            android:text="@string/trafficBtn" />
+
+        <Button
+            android:id="@+id/mapBtn"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_row="5"
+            android:layout_column="0"
+            android:layout_marginStart="20dp"
+            android:text="@string/mapBtn" />
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:layout_marginStart="40dp"
+            android:text="@string/loginBtn" />
+
+
+    </GridLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">HW2App</string>
+    <string name="app_name">HW6App</string>
     <string name="loading">Loading…</string>
     <string name="trafficBtn">Traffic Cams</string>
     <string name="noInternet">No Internet Connection</string>
@@ -7,9 +7,9 @@
     <string name="badJSON">Error in JSON formatting</string>
     <string name="unknownError">Unknown error</string>
     <string name="badURL">Error: bad resource URL</string>
-    <string name="usernameBox">Username: </string>
-    <string name="emailBox">Email: </string>
-    <string name="passwordBox">Password: </string>
+    <string name="email">Email: </string>
+    <string name="username">Username: </string>
+    <string name="password">Password: </string>
     <string name="loginBtn">Login</string>
     <string name="nwBtn">North West</string>
     <string name="mapBtn">Google Map</string>

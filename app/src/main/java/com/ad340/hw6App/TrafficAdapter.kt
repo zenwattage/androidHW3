@@ -1,4 +1,4 @@
-package com.example.hw2app
+package com.ad340.hw6App
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,7 +6,8 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.hw2app.models.Camera
+import com.ad340.hw6App.R
+import com.ad340.hw6App.models.Camera
 import com.squareup.picasso.Picasso
 
 
@@ -21,7 +22,7 @@ class TrafficAdapter(private val apiResponse: Camera) :
         val img: ImageView = itemView.findViewById(R.id.traffic_cam_image)
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TrafficViewHolder{
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TrafficViewHolder {
         val view = LayoutInflater.from(parent.context)
             .inflate(R.layout.traffic_cam, parent, false)
         return TrafficViewHolder(view)
